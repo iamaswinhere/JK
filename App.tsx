@@ -17,7 +17,7 @@ function App() {
     // Standard Loading Animation for 2.5s
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
