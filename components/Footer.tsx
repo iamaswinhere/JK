@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
               Elevating interiors through light, texture, and thoughtful design.
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-white uppercase tracking-widest text-xs font-bold mb-6">Explore</h4>
             <ul className="space-y-3 text-sm">
@@ -24,17 +24,17 @@ export const Footer: React.FC = () => {
               <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white uppercase tracking-widest text-xs font-bold mb-6">Contact</h4>
             <ul className="space-y-3 text-sm">
-              <li>123 Design Avenue</li>
-              <li>New York, NY 10012</li>
+              <li>JK Interiors</li>
+              <li>Athipotta, Tarur, Palakkad, Kerala, India</li>
               <li>hello@jkinteriors.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>+91 9847389972</li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white uppercase tracking-widest text-xs font-bold mb-6">Social</h4>
             <div className="flex space-x-4">
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
           <p>&copy; {new Date().getFullYear()} JK Interiors. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
