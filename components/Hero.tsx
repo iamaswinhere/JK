@@ -3,25 +3,10 @@ import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     setIsLoaded(true);
-
-    const handleScroll = () => {
-      if (imgRef.current) {
-        // Direct DOM update avoids React Re-renders on every frame = 60fps smooth
-        const scrollY = window.scrollY;
-        // Only transform if the hero is roughly in view to save resources
-        if (scrollY < window.innerHeight) {
-          imgRef.current.style.transform = `translateY(${scrollY * 0.5}px) scale(${isLoaded ? 1 : 1.1})`;
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isLoaded]);
+  }, []);
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-stone-900">
@@ -29,19 +14,13 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-black/40 z-10" />
         {/* Optimized Image: Fetch Priority High + Eager Loading */}
         <img
-          ref={imgRef}
           src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2400&auto=format&fit=crop"
           alt="Luxury Interior Living Room"
           // @ts-ignore - React warning fix: use lowercase attribute for DOM
           fetchpriority="high"
           loading="eager"
           decoding="async"
-          className="w-full h-[120%] object-cover object-center transition-transform duration-[2000ms] ease-out will-change-transform"
-          // The scale part is now managed by React's style prop for the initial transition
-          // The translateY part will be updated directly via imgRef in useEffect
-          style={{
-            transform: `scale(${isLoaded ? 1 : 1.1})` // Combine parallax with scale
-          }}
+          className="w-full h-[120%] object-cover object-center"
         />
       </div>
 
