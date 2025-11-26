@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LoadingScreen: React.FC = () => {
+export const LoadingScreen: React.FC = () => {
     return (
         <div className="fixed inset-0 z-[100] bg-stone-50 flex flex-col items-center justify-center transition-opacity duration-700">
             <div className="relative">
