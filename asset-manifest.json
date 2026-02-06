@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JK/static/css/main.0d989ae7.css",
-    "main.js": "/JK/static/js/main.66f67b80.js",
+    "main.js": "/JK/static/js/main.dce5d2af.js",
     "static/media/Teraceliving.jpg": "/JK/static/media/Teraceliving.d7d5675f41669aa9483c.jpg",
     "static/media/Livingroom.jpg": "/JK/static/media/Livingroom.3757a9bd33ded98769bf.jpg",
     "static/media/artspace.jpg": "/JK/static/media/artspace.d2a345315afbc76c052e.jpg",
@@ -14,10 +14,10 @@
     "static/media/furniture.jpg": "/JK/static/media/furniture.6f057a53754998b5e197.jpg",
     "index.html": "/JK/index.html",
     "main.0d989ae7.css.map": "/JK/static/css/main.0d989ae7.css.map",
-    "main.66f67b80.js.map": "/JK/static/js/main.66f67b80.js.map"
+    "main.dce5d2af.js.map": "/JK/static/js/main.dce5d2af.js.map"
   },
   "entrypoints": [
     "static/css/main.0d989ae7.css",
-    "static/js/main.66f67b80.js"
+    "static/js/main.dce5d2af.js"
   ]
 }
