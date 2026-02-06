@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/JK/static/css/main.0d989ae7.css",
+    "main.js": "/JK/static/js/main.e8e2e0c1.js",
+    "static/media/Teraceliving.png": "/JK/static/media/Teraceliving.310d47d0a1ee2a13d938.png",
+    "static/media/Livingroom.png": "/JK/static/media/Livingroom.d644fe4ceff480d2a232.png",
+    "static/media/artspace.png": "/JK/static/media/artspace.2fe25e75502ffd23201f.png",
+    "static/media/Ghdine.png": "/JK/static/media/Ghdine.224c435bd5a6ff6f56fe.png",
+    "static/media/commercialimg.png": "/JK/static/media/commercialimg.cc663a616e094338c4d6.png",
+    "static/media/cnctimg.png": "/JK/static/media/cnctimg.c527afd0c7ff3cb2f9da.png",
+    "static/media/Residetialimg.png": "/JK/static/media/Residetialimg.659224a1f2e9d2be93b2.png",
+    "static/media/kitchimg.png": "/JK/static/media/kitchimg.034a98ae3ee262b578e3.png",
+    "static/media/bathimg.png": "/JK/static/media/bathimg.28df20986dc55ba74d61.png",
+    "static/media/furniture.png": "/JK/static/media/furniture.2de8498e070a35f3fbfa.png",
+    "index.html": "/JK/index.html",
+    "main.0d989ae7.css.map": "/JK/static/css/main.0d989ae7.css.map",
+    "main.e8e2e0c1.js.map": "/JK/static/js/main.e8e2e0c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d989ae7.css",
+    "static/js/main.e8e2e0c1.js"
+  ]
+}
