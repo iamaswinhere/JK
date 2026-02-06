@@ -1,0 +1,16 @@
+.portfolio-page {
+    padding-top: 85px;
+    /* Offset fixed navbar */
+    min-height: 100vh;
+}
+
+.portfolio-hero {
+    padding: 6rem 0 4rem;
+    background-color: var(--color-bg-secondary);
+    margin-bottom: 2rem;
+}
+
+.portfolio-hero h1 {
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+}

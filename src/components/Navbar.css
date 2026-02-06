@@ -1,0 +1,89 @@
+.navbar-custom {
+    background-color: transparent;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom.scrolled {
+    background-color: var(--color-bg-primary);
+    /* White when scrolled */
+    padding: 0.8rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-text-primary) !important;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand-logo {
+    height: 30px;
+    width: auto;
+}
+
+.nav-link {
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    position: relative;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-custom.scrolled .nav-link {
+    color: var(--color-text-primary) !important;
+}
+
+/* Initial state (on top of video/dark background) needs to be white text? 
+   Design shows light theme throughout, but Hero is usually dark image/video.
+   Let's assume Navbar text is White on top (scrolled=false) and Black when scrolled, 
+   OR if the design shows it being light always. 
+   The design file (screen.png) shows a blue button top right. It implies a light header mostly, 
+   but it's overlaid on a hero image. The hero text is WHITE. So navbar likely WHITE text initially. */
+
+.navbar-custom:not(.scrolled) .nav-link,
+.navbar-custom:not(.scrolled) .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-custom.scrolled .navbar-brand {
+    color: var(--color-text-primary) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+}
+
+.btn-nav-cta {
+    background-color: var(--color-accent);
+    color: white !important;
+    border-radius: var(--border-radius-sm);
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.btn-nav-cta:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-1px);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}

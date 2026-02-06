@@ -1,0 +1,90 @@
+.portfolio-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-primary);
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+}
+
+.portfolio-section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.portfolio-subtitle {
+    color: var(--color-text-secondary);
+    margin-top: 0.5rem;
+}
+
+.portfolio-link-all {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+/* Simulate different aspect ratios */
+.ratio-tall {
+    aspect-ratio: 3/4;
+}
+
+.ratio-sq {
+    aspect-ratio: 1/1;
+}
+
+.ratio-wide {
+    aspect-ratio: 16/9;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.portfolio-grid-item:hover .portfolio-img {
+    transform: scale(1.08);
+}
+
+/* Clean overlay, no heavy text unless hovered or minimal style */
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-grid-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio-info h4 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.portfolio-info span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,136 @@
+.project-modal .modal-content {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.project-modal .modal-header {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 2rem;
+}
+
+.project-modal .modal-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+}
+
+.modal-main-img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.modal-content-details {
+    padding: 1rem;
+}
+
+.modal-content-details h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+.project-meta {
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+    .modal-main-img {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Custom Modal Overlay Blur */
+.modal-backdrop.show {
+    opacity: 0.8 !important;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.premium-modal-content {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: transparent !important;
+    overflow: hidden;
+}
+
+.project-modal .modal-body {
+    background: white;
+    min-height: 80vh;
+}
+
+/* Custom Close Button */
+.custom-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: none !important;
+    color: #000 !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.custom-close-btn:hover {
+    background: #000 !important;
+    color: #fff !important;
+    transform: rotate(90deg);
+}
+
+/* Typography & Layout */
+.modal-img-wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.tracking-wide {
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+}
+
+.project-meta .meta-item {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 991px) {
+    .premium-modal-content {
+        height: auto !important;
+    }
+
+    .project-modal .modal-body {
+        min-height: auto;
+    }
+
+    .modal-img-wrapper {
+        height: 300px;
+    }
+}
